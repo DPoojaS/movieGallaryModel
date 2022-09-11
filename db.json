@@ -1,0 +1,20 @@
+{
+  "moviesInfo": [
+    {
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWMh0rJqqYwN-oMva_51RvBjopQJ-U_Pjrtg&usqp=CAU",
+      "imgTitle": "Andhadhundha",
+      "imgRating": "4",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

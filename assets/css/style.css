@@ -1,0 +1,65 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.card.movieCard {
+    box-shadow: 1px 0px 3px 2px #ededed;
+}
+.title{
+    text-transform: capitalize;
+}
+#myModel {
+    position: fixed;
+    width: 60%;
+     overflow:hidden;
+    background-color: white;
+    left: 20%;
+    top: 20%;
+    border-radius: 5px;
+     box-shadow: 10px 20px 20px rgba(0,0,0,.2);
+     display:none;
+    
+}
+
+#myModel.show{
+    display:block;
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */;
+   animation: slideDown .5s ease-in-out;
+  
+}
+#backdrop{
+    position:fixed;
+    height: 100vh;
+    left:0;
+    top:0;
+    background-color:rgba(0,0,0,.5);
+    width:100%;
+    display:none;
+}
+#backdrop.show{
+    display:block;
+}
+.mHeader{
+    position:relative;
+}
+
+.mHeader i{
+    position:absolute;
+    top:22px;
+    right:10px;
+    cursor:pointer;
+}
+.movieCard img{
+    width: 100%;
+    object-fit: cover;
+    height: 172px;
+}
+@keyframes slideDown {
+    from{
+        transform:translateY(-70px)
+    }
+    to{
+        transform:translateY(0)
+    }
+}
